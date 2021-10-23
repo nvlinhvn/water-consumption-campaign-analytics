@@ -5,7 +5,7 @@
 
 ## Data Overview
 - The row is the daily water consumption (in liters). There are total 364 rows (364 days) continuously from 01-January.
-- The columns are 11 district
+- The columns are 11 districts
 - The campaign ran only in District 1 for the last 28 days (02-Dec to 30-Dec)
 - Data samples are shown below
 
