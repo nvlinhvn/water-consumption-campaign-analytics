@@ -19,7 +19,7 @@
 - One-tailed test valuation
 
 ## Helper Function
-- Preproc to plot, eda, and decompose time-series into cyclic seasonality features
+- `preproc.py` to plot, eda, and decompose time-series into cyclic seasonality features
 
 ### Example of Data Exploration
 
