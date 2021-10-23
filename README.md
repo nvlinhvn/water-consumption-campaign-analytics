@@ -55,7 +55,7 @@ where (among 11 districts): <br>
     - Treatment = 0 before week 48 (<img src="https://latex.codecogs.com/svg.image?t&space;\leq&space;335" title="t \leq 335" />)
     - Treatment = 1 after campaign start at week 48 (<img src="https://latex.codecogs.com/svg.image?t&space;\geq&space;336" title="t \geq 336" />) (02-Dec to 30-Dec)
 
-![title](img/eq1.png)
+![title](img/eq1.PNG)
 
 #### The objective is to see if<img src="https://latex.codecogs.com/svg.image?c_{0}" title="c_{0}" /> is significant negative than 0, this means the campaign is effective
 
