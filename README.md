@@ -45,16 +45,6 @@
 <img src="https://latex.codecogs.com/svg.image?\begin{align}C_{k}(t)&space;=&space;\frac{a_{0}}{2}&space;&plus;&space;\sum&space;\limits&space;_{n=1}&space;^{3}&space;\bigg[a_{n}cos\frac{2n\pi&space;t}{T}&space;&plus;&space;b_{n}sin\frac{2n\pi&space;t}{T}\bigg]&plus;&space;c_{0}&space;Treatment(t)&plus;&space;\sum&space;\limits&space;_{j=1,&space;j&space;\neq&space;k}&space;^{11}&space;d_{j}&space;C_{j}(t)\end{align}" title="\begin{align}C_{k}(t) = \frac{a_{0}}{2} + \sum \limits _{n=1} ^{3} \bigg[a_{n}cos\frac{2n\pi t}{T} + b_{n}sin\frac{2n\pi t}{T}\bigg]+ c_{0} Treatment(t)+ \sum \limits _{j=1, j \neq k} ^{11} d_{j} C_{j}(t)\end{align}" />
 <br>
 where (among 11 districts): <br>
-- <img src="https://latex.codecogs.com/svg.image?C_{k}(t)" title="C_{k}(t)" />: Water consumption at day $t$ at district $k$ 
-- <img src="https://latex.codecogs.com/svg.image?C_{j}(t)" title="C_{j}(t)" />: Water consumption at day $t$ at district $j \neq k$ 
-- <img src="https://latex.codecogs.com/svg.image?d_{j}" title="d_{j}" />: Coefficients of consumption impact from district $j$ to district $ k$ 
-- Fourier Series shows the seasonality relationship. We have both weekly and yearly seasonality
-- <img src="https://latex.codecogs.com/svg.image?T&space;=&space;7" title="T = 7" /> for weekly seasonality, <img src="https://latex.codecogs.com/svg.image?T&space;=&space;12" title="T = 12" /> for yearly seasonality
-- order of Fourier Series: 3 
-- <img src="https://latex.codecogs.com/svg.image?Treatment(t)" title="Treatment(t)" /> is binary values to show whether the campaign is launched at <img src="https://latex.codecogs.com/svg.image?t" title="t" /> 
-    - Treatment = 0 before week 48 (<img src="https://latex.codecogs.com/svg.image?t&space;\leq&space;335" title="t \leq 335" />)
-    - Treatment = 1 after campaign start at week 48 (<img src="https://latex.codecogs.com/svg.image?t&space;\geq&space;336" title="t \geq 336" />) (02-Dec to 30-Dec)
-
 ![title](img/eq1.PNG)
 
 #### The objective is to see if<img src="https://latex.codecogs.com/svg.image?c_{0}" title="c_{0}" /> is significant negative than 0, this means the campaign is effective
@@ -120,6 +110,8 @@ where (among 11 districts): <br>
 - The consumption of district 5 - 11 signficantly impacts the consumption at district 1
 
 #### The water consumption model of District 1 is, therefore, explicitly represented by:
+
+<img src="https://latex.codecogs.com/svg.image?\begin{align}C_{1}(t)&space;=&space;2345.2424&space;&plus;&space;1023.8563&space;sin{\frac{2&space;\pi&space;t}{7}}&space;&plus;&space;796.9244&space;cos{\frac{2&space;\pi&space;t}{7}}&space;-&space;235.4524&space;sin{\frac{4&space;\pi&space;t}{7}}&space;&plus;&space;577.6707&space;cos{\frac{4&space;\pi&space;t}{7}}&space;-&space;871.0032&space;sin{\frac{6&space;\pi&space;t}{7}}&space;-&space;394.9983&space;cos{\frac{2&space;\pi&space;t}{12}}&space;-&space;394.9983&space;cos{\frac{4&space;\pi&space;t}{12}}&space;-&space;394.9983&space;cos{\frac{6&space;\pi&space;t}{12}}&space;&plus;&space;0.0392&space;C_{5}(t)&space;&plus;&space;0.0662&space;C_{6}(t)&space;&plus;&space;0.057&space;C_{7}(t)&space;&plus;&space;0.0707&space;C_{8}(t)&space;&plus;&space;C_{9}(t)&space;&plus;&space;0.1674&space;C_{10}(t)&space;&plus;&space;&space;0.3606&space;C_{11}(t)&space;-&space;880.0455&space;Treatment(t)\end{align}" title="\begin{align}C_{1}(t) = 2345.2424 + 1023.8563 sin{\frac{2 \pi t}{7}} + 796.9244 cos{\frac{2 \pi t}{7}} - 235.4524 sin{\frac{4 \pi t}{7}} + 577.6707 cos{\frac{4 \pi t}{7}} - 871.0032 sin{\frac{6 \pi t}{7}} - 394.9983 cos{\frac{2 \pi t}{12}} - 394.9983 cos{\frac{4 \pi t}{12}} - 394.9983 cos{\frac{6 \pi t}{12}} + 0.0392 C_{5}(t) + 0.0662 C_{6}(t) + 0.057 C_{7}(t) + 0.0707 C_{8}(t) + C_{9}(t) + 0.1674 C_{10}(t) + 0.3606 C_{11}(t) - 880.0455 Treatment(t)\end{align}" />
 
 $\begin{align}
 C_{1}(t) = 2345.2424 
