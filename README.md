@@ -111,34 +111,14 @@ where (among 11 districts): <br>
 
 #### The water consumption model of District 1 is, therefore, explicitly represented by:
 
-<img src="https://latex.codecogs.com/svg.image?\begin{align}C_{1}(t)&space;=&space;2345.2424&space;&plus;&space;1023.8563&space;sin{\frac{2&space;\pi&space;t}{7}}&space;&plus;&space;796.9244&space;cos{\frac{2&space;\pi&space;t}{7}}&space;-&space;235.4524&space;sin{\frac{4&space;\pi&space;t}{7}}&space;&plus;&space;577.6707&space;cos{\frac{4&space;\pi&space;t}{7}}&space;-&space;871.0032&space;sin{\frac{6&space;\pi&space;t}{7}}&space;-&space;394.9983&space;cos{\frac{2&space;\pi&space;t}{12}}&space;-&space;394.9983&space;cos{\frac{4&space;\pi&space;t}{12}}&space;-&space;394.9983&space;cos{\frac{6&space;\pi&space;t}{12}}&space;&plus;&space;0.0392&space;C_{5}(t)&space;&plus;&space;0.0662&space;C_{6}(t)&space;&plus;&space;0.057&space;C_{7}(t)&space;&plus;&space;0.0707&space;C_{8}(t)&space;&plus;&space;C_{9}(t)&space;&plus;&space;0.1674&space;C_{10}(t)&space;&plus;&space;&space;0.3606&space;C_{11}(t)&space;-&space;880.0455&space;Treatment(t)\end{align}" title="\begin{align}C_{1}(t) = 2345.2424 + 1023.8563 sin{\frac{2 \pi t}{7}} + 796.9244 cos{\frac{2 \pi t}{7}} - 235.4524 sin{\frac{4 \pi t}{7}} + 577.6707 cos{\frac{4 \pi t}{7}} - 871.0032 sin{\frac{6 \pi t}{7}} - 394.9983 cos{\frac{2 \pi t}{12}} - 394.9983 cos{\frac{4 \pi t}{12}} - 394.9983 cos{\frac{6 \pi t}{12}} + 0.0392 C_{5}(t) + 0.0662 C_{6}(t) + 0.057 C_{7}(t) + 0.0707 C_{8}(t) + C_{9}(t) + 0.1674 C_{10}(t) + 0.3606 C_{11}(t) - 880.0455 Treatment(t)\end{align}" />
-
-$\begin{align}
-C_{1}(t) = 2345.2424 
-                           + 1023.8563 sin{\frac{2 \pi t}{7}} + 796.9244 cos{\frac{2 \pi t}{7}} 
-                           - 235.4524 sin{\frac{4 \pi t}{7}} + 577.6707 cos{\frac{4 \pi t}{7}}
-                           - 871.0032 sin{\frac{6 \pi t}{7}}
-\end{align}$
-$\begin{align}
-                           - 394.9983 cos{\frac{2 \pi t}{12}} 
-                           - 394.9983 cos{\frac{4 \pi t}{12}}
-                           - 394.9983 cos{\frac{6 \pi t}{12}}
-\end{align}$
-$\begin{align}
-                           + 0.0392 C_{5}(t) + 0.0662 C_{6}(t) + 0.057 C_{7}(t)
-\end{align}$
-$\begin{align}
-                           +  0.0707 C_{8}(t) + C_{9}(t) + 0.1674 C_{10}(t)
-                           +  0.3606 C_{11}(t)
-                           - 880.0455 Treatment(t)
-\end{align}$
+![title](img/eq3.PNG)
 
 ## Fit Metrics and Plots:
 
-- Adjusted R squared =  0.919463566534413 <br>
-- RMSE               =  1933.1728706098218 <br>
-- MAE                =  1594.4797710850528 <br> 
-- MAPE               =  0.051321756495113925 <br>
+- Adjusted R squared =  0.919 <br>
+- RMSE               =  1933.2 <br>
+- MAE                =  1594.5 <br> 
+- MAPE               =  0.051 <br>
 
 ##### DISTRICT 1 CONSUMPTION
 
