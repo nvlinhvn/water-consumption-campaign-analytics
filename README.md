@@ -45,16 +45,16 @@
 <img src="https://latex.codecogs.com/svg.image?\begin{align}C_{k}(t)&space;=&space;\frac{a_{0}}{2}&space;&plus;&space;\sum&space;\limits&space;_{n=1}&space;^{3}&space;\bigg[a_{n}cos\frac{2n\pi&space;t}{T}&space;&plus;&space;b_{n}sin\frac{2n\pi&space;t}{T}\bigg]&plus;&space;c_{0}&space;Treatment(t)&plus;&space;\sum&space;\limits&space;_{j=1,&space;j&space;\neq&space;k}&space;^{11}&space;d_{j}&space;C_{j}(t)\end{align}" title="\begin{align}C_{k}(t) = \frac{a_{0}}{2} + \sum \limits _{n=1} ^{3} \bigg[a_{n}cos\frac{2n\pi t}{T} + b_{n}sin\frac{2n\pi t}{T}\bigg]+ c_{0} Treatment(t)+ \sum \limits _{j=1, j \neq k} ^{11} d_{j} C_{j}(t)\end{align}" />
 <br>
 where (among 11 districts): <br>
-- <img src="https://latex.codecogs.com/svg.image?C_{k}(t)" title="C_{k}(t)" />: Water consumption at day $t$ at district $k$ <br> 
-- <img src="https://latex.codecogs.com/svg.image?C_{j}(t)" title="C_{j}(t)" />: Water consumption at day $t$ at district $j \neq k$ <br> 
-- <img src="https://latex.codecogs.com/svg.image?d_{j}" title="d_{j}" />: Coefficients of consumption impact from district $j$ to district $ k$ <br> 
-- Fourier Series shows the seasonality relationship. We have both weekly and yearly seasonality <br>
-- <img src="https://latex.codecogs.com/svg.image?T&space;=&space;7" title="T = 7" /> for weekly seasonality, <img src="https://latex.codecogs.com/svg.image?T&space;=&space;12" title="T = 12" /> for yearly seasonality <br>
-- order of Fourier Series: 3 <br>
-- <img src="https://latex.codecogs.com/svg.image?Treatment(t)" title="Treatment(t)" /> is binary values to show whether the campaign is launched at <img src="https://latex.codecogs.com/svg.image?t" title="t" /> <br>
+- <img src="https://latex.codecogs.com/svg.image?C_{k}(t)" title="C_{k}(t)" />: Water consumption at day $t$ at district $k$ 
+- <img src="https://latex.codecogs.com/svg.image?C_{j}(t)" title="C_{j}(t)" />: Water consumption at day $t$ at district $j \neq k$ 
+- <img src="https://latex.codecogs.com/svg.image?d_{j}" title="d_{j}" />: Coefficients of consumption impact from district $j$ to district $ k$ 
+- Fourier Series shows the seasonality relationship. We have both weekly and yearly seasonality
+- <img src="https://latex.codecogs.com/svg.image?T&space;=&space;7" title="T = 7" /> for weekly seasonality, <img src="https://latex.codecogs.com/svg.image?T&space;=&space;12" title="T = 12" /> for yearly seasonality
+- order of Fourier Series: 3 
+- <img src="https://latex.codecogs.com/svg.image?Treatment(t)" title="Treatment(t)" /> is binary values to show whether the campaign is launched at <img src="https://latex.codecogs.com/svg.image?t" title="t" /> 
     - Treatment = 0 before week 48 (<img src="https://latex.codecogs.com/svg.image?t&space;\leq&space;335" title="t \leq 335" />)
     - Treatment = 1 after campaign start at week 48 (<img src="https://latex.codecogs.com/svg.image?t&space;\geq&space;336" title="t \geq 336" />) (02-Dec to 30-Dec)
-
+![District 1](img/Eq1.png)
 #### The objective is to see if<img src="https://latex.codecogs.com/svg.image?c_{0}" title="c_{0}" /> is significant negative than 0, this means the campaign is effective
 
 ### OLS Regression Analysis for District 1
