@@ -42,13 +42,8 @@
 - Assume the day starts from 01/01
 
 ## Linear Regression Analysis for consumption of District 1 at day $t$
-$
-\begin{align}
-C_{k}(t) = \frac{a_{0}}{2} + \sum \limits _{n=1} ^{3} \bigg[a_{n}cos\frac{2n\pi t}{T} + b_{n}sin\frac{2n\pi t}{T}\bigg]
-+ c_{0} Treatment(t)
-+ \sum \limits _{j=1, j \neq k} ^{11} d_{j} C_{j}(t)
-\end{align}
-$ <br>
+<img src="https://latex.codecogs.com/svg.image?\begin{align}C_{k}(t)&space;=&space;\frac{a_{0}}{2}&space;&plus;&space;\sum&space;\limits&space;_{n=1}&space;^{3}&space;\bigg[a_{n}cos\frac{2n\pi&space;t}{T}&space;&plus;&space;b_{n}sin\frac{2n\pi&space;t}{T}\bigg]&plus;&space;c_{0}&space;Treatment(t)&plus;&space;\sum&space;\limits&space;_{j=1,&space;j&space;\neq&space;k}&space;^{11}&space;d_{j}&space;C_{j}(t)\end{align}" title="\begin{align}C_{k}(t) = \frac{a_{0}}{2} + \sum \limits _{n=1} ^{3} \bigg[a_{n}cos\frac{2n\pi t}{T} + b_{n}sin\frac{2n\pi t}{T}\bigg]+ c_{0} Treatment(t)+ \sum \limits _{j=1, j \neq k} ^{11} d_{j} C_{j}(t)\end{align}" />
+<br>
 where (among 11 districts): <br>
 - $C_{k}(t)$: Water consumption at day $t$ at district $k$ <br> 
 - $C_{j}(t)$: Water consumption at day $t$ at district $j \neq k$ <br> 
