@@ -53,61 +53,61 @@
 ### OLS Regression Analysis for District 1
 
 
-                                OLS Regression Results                            
-    ==============================================================================
-    Dep. Variable:             District_1   R-squared:                       0.924
-    Model:                            OLS   Adj. R-squared:                  0.919
-    Method:                 Least Squares   F-statistic:                     219.1
-    Date:                Sat, 23 Oct 2021   Prob (F-statistic):          3.54e-179
-    Time:                        13:01:00   Log-Likelihood:                -3134.9
-    No. Observations:                 364   AIC:                             6310.
-    Df Residuals:                     344   BIC:                             6388.
-    Df Model:                          19                                         
-    Covariance Type:            nonrobust                                         
-    =======================================================================================
-                              coef    std err          t      P>|t|      [0.025      0.975]
-    ---------------------------------------------------------------------------------------
-    Intercept            2345.2424   1378.097      1.702      0.090    -365.315    5055.800
-    sin_week_1n          1023.8563    125.315      8.170      0.000     777.377    1270.336
-    cos_week_1n           796.9244    118.620      6.718      0.000     563.612    1030.236
-    sin_week_2n          -235.4524    104.993     -2.243      0.026    -441.961     -28.943
-    cos_week_2n           577.6707    110.006      5.251      0.000     361.301     794.041
-    sin_week_3n          -283.3212    105.442     -2.687      0.008    -490.714     -75.928
-    cos_week_3n           -93.3627    103.557     -0.902      0.368    -297.047     110.321
-    sin_year_1n            50.8952     36.073      1.411      0.159     -20.056     121.846
-    cos_year_1n          -394.9983     48.188     -8.197      0.000    -489.778    -300.218
-    sin_year_2n            50.8952     36.073      1.411      0.159     -20.056     121.846
-    cos_year_2n          -394.9983     48.188     -8.197      0.000    -489.778    -300.218
-    sin_year_3n            50.8952     36.073      1.411      0.159     -20.056     121.846
-    cos_year_3n          -394.9983     48.188     -8.197      0.000    -489.778    -300.218
-    District_2              0.0098      0.015      0.650      0.516      -0.020       0.039
-    District_3              0.0173      0.015      1.182      0.238      -0.012       0.046
-    District_4              0.0176      0.016      1.129      0.260      -0.013       0.048
-    District_5              0.0392      0.016      2.423      0.016       0.007       0.071
-    District_6              0.0662      0.016      4.174      0.000       0.035       0.097
-    District_7              0.0570      0.016      3.625      0.000       0.026       0.088
-    District_8              0.0707      0.018      3.884      0.000       0.035       0.106
-    District_9              0.1222      0.020      6.198      0.000       0.083       0.161
-    District_10             0.1674      0.024      7.066      0.000       0.121       0.214
-    District_11             0.3606      0.027     13.357      0.000       0.307       0.414
-    Treament_District_1  -880.0455    312.816     -2.813      0.005   -1495.317    -264.773
-    ==============================================================================
-    Omnibus:                        0.584   Durbin-Watson:                   1.442
-    Prob(Omnibus):                  0.747   Jarque-Bera (JB):                0.507
-    Skew:                          -0.091   Prob(JB):                        0.776
-    Kurtosis:                       3.017   Cond. No.                     2.13e+19
-    ==============================================================================
-    
-    Notes:
-    [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-    [2] The smallest eigenvalue is 7.84e-27. This might indicate that there are
-    strong multicollinearity problems or that the design matrix is singular.
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             District_1   R-squared:                       0.936
+Model:                            OLS   Adj. R-squared:                  0.932
+Method:                 Least Squares   F-statistic:                     216.1
+Date:                Sun, 24 Oct 2021   Prob (F-statistic):          1.83e-187
+Time:                        10:04:31   Log-Likelihood:                -3102.9
+No. Observations:                 364   AIC:                             6254.
+Df Residuals:                     340   BIC:                             6347.
+Df Model:                          23                                         
+Covariance Type:            nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept            6353.9583   1368.048      4.645      0.000    3663.054    9044.862
+sin_week_1n          1326.6134    121.505     10.918      0.000    1087.617    1565.610
+cos_week_1n          1052.4853    113.875      9.242      0.000     828.498    1276.473
+sin_week_2n          -338.5787     97.675     -3.466      0.001    -530.703    -146.455
+cos_week_2n           736.4401    103.287      7.130      0.000     533.278     939.602
+sin_week_3n          -385.2357     98.001     -3.931      0.000    -578.001    -192.471
+cos_week_3n          -172.2709     95.951     -1.795      0.073    -361.003      16.461
+sin_year_1n           240.9986    107.444      2.243      0.026      29.659     452.338
+cos_year_1n         -1610.5931    188.649     -8.538      0.000   -1981.659   -1239.527
+sin_year_2n           376.8972    123.336      3.056      0.002     134.300     619.495
+cos_year_2n           605.0006    143.525      4.215      0.000     322.692     887.309
+sin_year_3n           -61.6749    124.646     -0.495      0.621    -306.850     183.500
+cos_year_3n          -457.5879    128.098     -3.572      0.000    -709.551    -205.624
+District_2              0.0176      0.014      1.262      0.208      -0.010       0.045
+District_3              0.0243      0.014      1.793      0.074      -0.002       0.051
+District_4              0.0100      0.014      0.690      0.491      -0.018       0.038
+District_5              0.0318      0.015      2.124      0.034       0.002       0.061
+District_6              0.0666      0.015      4.544      0.000       0.038       0.095
+District_7              0.0483      0.015      3.307      0.001       0.020       0.077
+District_8              0.0548      0.017      3.226      0.001       0.021       0.088
+District_9              0.1075      0.018      5.863      0.000       0.071       0.144
+District_10             0.1373      0.022      6.180      0.000       0.094       0.181
+District_11             0.3010      0.026     11.588      0.000       0.250       0.352
+Treament_District_1 -1192.1777    503.144     -2.369      0.018   -2181.845    -202.510
+==============================================================================
+Omnibus:                       11.642   Durbin-Watson:                   1.427
+Prob(Omnibus):                  0.003   Jarque-Bera (JB):               17.340
+Skew:                          -0.233   Prob(JB):                     0.000172
+Kurtosis:                       3.962   Cond. No.                     2.06e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.06e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
 
 
-- Regression result shows that p-value of treatment coefficient = 0.005 < 0.05 / 2 for district 1
+- Regression result shows that p-value of treatment coefficient (-1192.1777) = 0.005 < 0.05 / 2 for district 1
 - This means we can reject the null hypothesis. The coefficient of treament effect is negatively significant and different from 0
-- the daily water consumption at District 1 is predicted to be lower by 880 litres (compared with the usual day), thanks to this campaign
-- Also, p-value of variable `cos_week_3n`,  `sin_year_3n`, `sin_year_1n`, `sin_year_2n`, `sin_year_3n`, and `consumption of district 2 to 4`  > 0.05, so this means those variables are not statistically significantly different from 0. So we can remove this from function
+- the daily water consumption at District 1 is predicted to be lower by 1192 litres (compared with the usual day), thanks to this campaign
+- Also, p-value of variable `cos_week_3n`,  `sin_year_3n` and `consumption of district 2 to 4`  > 0.05, so this means those variables are not statistically significantly different from 0. So we can remove this from function
 - The consumption of district 5 - 11 signficantly impacts the consumption at district 1
 
 #### The water consumption model of District 1 is, therefore, explicitly represented by:
@@ -116,10 +116,10 @@
 
 ## Fit Metrics and Plots:
 
-- Adjusted R squared =  0.919 <br>
-- RMSE               =  1933.2 <br>
-- MAE                =  1594.5 <br> 
-- MAPE               =  0.051 <br>
+- Adjusted R squared =  0.932 <br>
+- RMSE               =  2020.5 <br>
+- MAE                =  1723.7 <br> 
+- MAPE               =  0.056 <br>
 
 ##### DISTRICT 1 CONSUMPTION
 
@@ -143,6 +143,6 @@
 ## CONCLUSIONS and FUTURE WORK
 
 - The campaign have significant impact on the water consumption in District 1. 
-- Daily water consumption at District 1 is predicted to be lower by 880 litres thanks to the campaign effect, compared with the usual day
+- Daily water consumption at District 1 is predicted to be lower by 1192 litres thanks to the campaign effect, compared with the usual day
 - In the next steps, we could evaluate post-campaign effect on district 1, if the effect is just instantly one-off or it really changes the water usage behavior
 - If campaign at district 1 has long-term effects, we could design the same campaigns for other districts
