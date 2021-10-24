@@ -139,7 +139,7 @@
 
 ![title](img/eq1.PNG)
 
-#### The objective is to see if    <img src="https://latex.codecogs.com/svg.image?c_{0}" title="c_{0}" />    is significant negative than 0, this means the campaign is effective
+#### The objective is to see if    <img src="https://latex.codecogs.com/svg.image?c_{0}" title="c_{0}" />    is significantly negative than 0, this means the campaign is effective
 
 ### OLS Regression Analysis for District 1
 ```
