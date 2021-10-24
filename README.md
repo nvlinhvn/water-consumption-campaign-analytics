@@ -143,7 +143,6 @@
 
 ### OLS Regression Analysis for District 1
 ```
-
                                 OLS Regression Results                            
     ==============================================================================
     Dep. Variable:             District_1   R-squared:                       0.936
