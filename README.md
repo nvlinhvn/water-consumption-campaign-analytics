@@ -230,7 +230,7 @@
     * District 2 with: district 9
     * District 6 with: district 7
 
-## CONCLUSIONS and FUTURE WORK
+## Conclusions and Future Work
 
 - The campaign have significant impact on the water consumption in District 1. 
 - Daily water consumption at District 1 is predicted to be lower by 1192 litres thanks to the campaign effect, compared with the usual day
