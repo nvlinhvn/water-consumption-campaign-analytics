@@ -51,57 +51,58 @@
 #### The objective is to see if    <img src="https://latex.codecogs.com/svg.image?c_{0}" title="c_{0}" />    is significant negative than 0, this means the campaign is effective
 
 ### OLS Regression Analysis for District 1
+```
 
+                                OLS Regression Results                            
+    ==============================================================================
+    Dep. Variable:             District_1   R-squared:                       0.936
+    Model:                            OLS   Adj. R-squared:                  0.932
+    Method:                 Least Squares   F-statistic:                     216.1
+    Date:                Sun, 24 Oct 2021   Prob (F-statistic):          1.83e-187
+    Time:                        10:04:31   Log-Likelihood:                -3102.9
+    No. Observations:                 364   AIC:                             6254.
+    Df Residuals:                     340   BIC:                             6347.
+    Df Model:                          23                                         
+    Covariance Type:            nonrobust                                         
+    =======================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+    ---------------------------------------------------------------------------------------
+    Intercept            6353.9583   1368.048      4.645      0.000    3663.054    9044.862
+    sin_week_1n          1326.6134    121.505     10.918      0.000    1087.617    1565.610
+    cos_week_1n          1052.4853    113.875      9.242      0.000     828.498    1276.473
+    sin_week_2n          -338.5787     97.675     -3.466      0.001    -530.703    -146.455
+    cos_week_2n           736.4401    103.287      7.130      0.000     533.278     939.602
+    sin_week_3n          -385.2357     98.001     -3.931      0.000    -578.001    -192.471
+    cos_week_3n          -172.2709     95.951     -1.795      0.073    -361.003      16.461
+    sin_year_1n           240.9986    107.444      2.243      0.026      29.659     452.338
+    cos_year_1n         -1610.5931    188.649     -8.538      0.000   -1981.659   -1239.527
+    sin_year_2n           376.8972    123.336      3.056      0.002     134.300     619.495
+    cos_year_2n           605.0006    143.525      4.215      0.000     322.692     887.309
+    sin_year_3n           -61.6749    124.646     -0.495      0.621    -306.850     183.500
+    cos_year_3n          -457.5879    128.098     -3.572      0.000    -709.551    -205.624
+    District_2              0.0176      0.014      1.262      0.208      -0.010       0.045
+    District_3              0.0243      0.014      1.793      0.074      -0.002       0.051
+    District_4              0.0100      0.014      0.690      0.491      -0.018       0.038
+    District_5              0.0318      0.015      2.124      0.034       0.002       0.061
+    District_6              0.0666      0.015      4.544      0.000       0.038       0.095
+    District_7              0.0483      0.015      3.307      0.001       0.020       0.077
+    District_8              0.0548      0.017      3.226      0.001       0.021       0.088
+    District_9              0.1075      0.018      5.863      0.000       0.071       0.144
+    District_10             0.1373      0.022      6.180      0.000       0.094       0.181
+    District_11             0.3010      0.026     11.588      0.000       0.250       0.352
+    Treament_District_1 -1192.1777    503.144     -2.369      0.018   -2181.845    -202.510
+    ==============================================================================
+    Omnibus:                       11.642   Durbin-Watson:                   1.427
+    Prob(Omnibus):                  0.003   Jarque-Bera (JB):               17.340
+    Skew:                          -0.233   Prob(JB):                     0.000172
+    Kurtosis:                       3.962   Cond. No.                     2.06e+06
+    ==============================================================================
+    
+    Notes:
+    [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+    [2] The condition number is large, 2.06e+06. This might indicate that there are
+    strong multicollinearity or other numerical problems.
 
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:             District_1   R-squared:                       0.936
-Model:                            OLS   Adj. R-squared:                  0.932
-Method:                 Least Squares   F-statistic:                     216.1
-Date:                Sun, 24 Oct 2021   Prob (F-statistic):          1.83e-187
-Time:                        10:04:31   Log-Likelihood:                -3102.9
-No. Observations:                 364   AIC:                             6254.
-Df Residuals:                     340   BIC:                             6347.
-Df Model:                          23                                         
-Covariance Type:            nonrobust                                         
-=======================================================================================
-                          coef    std err          t      P>|t|      [0.025      0.975]
----------------------------------------------------------------------------------------
-Intercept            6353.9583   1368.048      4.645      0.000    3663.054    9044.862
-sin_week_1n          1326.6134    121.505     10.918      0.000    1087.617    1565.610
-cos_week_1n          1052.4853    113.875      9.242      0.000     828.498    1276.473
-sin_week_2n          -338.5787     97.675     -3.466      0.001    -530.703    -146.455
-cos_week_2n           736.4401    103.287      7.130      0.000     533.278     939.602
-sin_week_3n          -385.2357     98.001     -3.931      0.000    -578.001    -192.471
-cos_week_3n          -172.2709     95.951     -1.795      0.073    -361.003      16.461
-sin_year_1n           240.9986    107.444      2.243      0.026      29.659     452.338
-cos_year_1n         -1610.5931    188.649     -8.538      0.000   -1981.659   -1239.527
-sin_year_2n           376.8972    123.336      3.056      0.002     134.300     619.495
-cos_year_2n           605.0006    143.525      4.215      0.000     322.692     887.309
-sin_year_3n           -61.6749    124.646     -0.495      0.621    -306.850     183.500
-cos_year_3n          -457.5879    128.098     -3.572      0.000    -709.551    -205.624
-District_2              0.0176      0.014      1.262      0.208      -0.010       0.045
-District_3              0.0243      0.014      1.793      0.074      -0.002       0.051
-District_4              0.0100      0.014      0.690      0.491      -0.018       0.038
-District_5              0.0318      0.015      2.124      0.034       0.002       0.061
-District_6              0.0666      0.015      4.544      0.000       0.038       0.095
-District_7              0.0483      0.015      3.307      0.001       0.020       0.077
-District_8              0.0548      0.017      3.226      0.001       0.021       0.088
-District_9              0.1075      0.018      5.863      0.000       0.071       0.144
-District_10             0.1373      0.022      6.180      0.000       0.094       0.181
-District_11             0.3010      0.026     11.588      0.000       0.250       0.352
-Treament_District_1 -1192.1777    503.144     -2.369      0.018   -2181.845    -202.510
-==============================================================================
-Omnibus:                       11.642   Durbin-Watson:                   1.427
-Prob(Omnibus):                  0.003   Jarque-Bera (JB):               17.340
-Skew:                          -0.233   Prob(JB):                     0.000172
-Kurtosis:                       3.962   Cond. No.                     2.06e+06
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 2.06e+06. This might indicate that there are
-strong multicollinearity or other numerical problems.
 
 
 - Regression result shows that p-value of treatment coefficient (-1192.1777) = 0.005 < 0.05 / 2 for district 1
