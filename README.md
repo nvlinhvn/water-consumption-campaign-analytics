@@ -204,7 +204,7 @@
 
 ![title](img/eq3.PNG)
 
-## Fit Metrics and Plots:
+## Metrics and Plots:
 
 - Adjusted R squared =  0.932 <br>
 - RMSE               =  2020.5 <br>
