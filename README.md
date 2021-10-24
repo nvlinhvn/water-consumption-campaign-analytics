@@ -9,6 +9,112 @@
 - The campaign ran only in District 1 for the last 28 days (02-Dec to 30-Dec)
 - Data samples are shown below
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>District_1</th>
+      <th>District_2</th>
+      <th>District_3</th>
+      <th>District_4</th>
+      <th>District_5</th>
+      <th>District_6</th>
+      <th>District_7</th>
+      <th>District_8</th>
+      <th>District_9</th>
+      <th>District_10</th>
+      <th>District_11</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>01-01</th>
+      <td>30000.00</td>
+      <td>25188.97</td>
+      <td>28538.15</td>
+      <td>31483.59</td>
+      <td>30486.67</td>
+      <td>30892.30</td>
+      <td>30613.86</td>
+      <td>27324.14</td>
+      <td>25658.25</td>
+      <td>28994.79</td>
+      <td>27645.36</td>
+    </tr>
+    <tr>
+      <th>02-01</th>
+      <td>31859.96</td>
+      <td>32538.84</td>
+      <td>38301.84</td>
+      <td>28500.64</td>
+      <td>33390.60</td>
+      <td>30254.08</td>
+      <td>24096.06</td>
+      <td>30740.24</td>
+      <td>28504.75</td>
+      <td>32948.60</td>
+      <td>32895.67</td>
+    </tr>
+    <tr>
+      <th>03-01</th>
+      <td>31516.08</td>
+      <td>36534.43</td>
+      <td>24865.96</td>
+      <td>37001.22</td>
+      <td>30877.25</td>
+      <td>26671.67</td>
+      <td>23436.28</td>
+      <td>30992.98</td>
+      <td>27555.64</td>
+      <td>30934.14</td>
+      <td>31562.64</td>
+    </tr>
+    <tr>
+      <th>04-01</th>
+      <td>28790.81</td>
+      <td>19551.51</td>
+      <td>32441.73</td>
+      <td>35832.19</td>
+      <td>40637.68</td>
+      <td>35049.81</td>
+      <td>32555.86</td>
+      <td>28242.00</td>
+      <td>27142.70</td>
+      <td>31642.02</td>
+      <td>27085.91</td>
+    </tr>
+    <tr>
+      <th>05-01</th>
+      <td>27434.27</td>
+      <td>33289.90</td>
+      <td>30563.99</td>
+      <td>36903.76</td>
+      <td>36365.24</td>
+      <td>27596.44</td>
+      <td>19360.99</td>
+      <td>28404.61</td>
+      <td>33131.36</td>
+      <td>29676.91</td>
+      <td>23879.14</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>District_1</th>      <th>District_2</th>      <th>District_3</th>      <th>District_4</th>      <th>District_5</th>      <th>District_6</th>      <th>District_7</th>      <th>District_8</th>      <th>District_9</th>      <th>District_10</th>      <th>District_11</th>    </tr>    <tr>      <th>Day</th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>      <th></th>    </tr>  </thead>  <tbody>    <tr>      <th>01-01</th>      <td>30000.00</td>      <td>25188.97</td>      <td>28538.15</td>      <td>31483.59</td>      <td>30486.67</td>      <td>30892.30</td>      <td>30613.86</td>      <td>27324.14</td>      <td>25658.25</td>      <td>28994.79</td>      <td>27645.36</td>    </tr>    <tr>      <th>02-01</th>      <td>31859.96</td>      <td>32538.84</td>      <td>38301.84</td>      <td>28500.64</td>      <td>33390.60</td>      <td>30254.08</td>      <td>24096.06</td>      <td>30740.24</td>      <td>28504.75</td>      <td>32948.60</td>      <td>32895.67</td>    </tr>    <tr>      <th>03-01</th>      <td>31516.08</td>      <td>36534.43</td>      <td>24865.96</td>      <td>37001.22</td>      <td>30877.25</td>      <td>26671.67</td>      <td>23436.28</td>      <td>30992.98</td>      <td>27555.64</td>      <td>30934.14</td>      <td>31562.64</td>    </tr>    <tr>      <th>04-01</th>      <td>28790.81</td>      <td>19551.51</td>      <td>32441.73</td>      <td>35832.19</td>      <td>40637.68</td>      <td>35049.81</td>      <td>32555.86</td>      <td>28242.00</td>      <td>27142.70</td>      <td>31642.02</td>      <td>27085.91</td>    </tr>    <tr>      <th>05-01</th>      <td>27434.27</td>      <td>33289.90</td>      <td>30563.99</td>      <td>36903.76</td>      <td>36365.24</td>      <td>27596.44</td>      <td>19360.99</td>      <td>28404.61</td>      <td>33131.36</td>      <td>29676.91</td>      <td>23879.14</td>    </tr>  </tbody></table>
 
 ## Objective
@@ -102,8 +208,7 @@
     [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
     [2] The condition number is large, 2.06e+06. This might indicate that there are
     strong multicollinearity or other numerical problems.
-
-
+```
 
 - Regression result shows that p-value of treatment coefficient (-1192.1777) = 0.005 < 0.05 / 2 for district 1
 - This means we can reject the null hypothesis. The coefficient of treament effect is negatively significant and different from 0
