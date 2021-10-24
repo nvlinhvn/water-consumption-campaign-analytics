@@ -115,7 +115,7 @@ class Preproc:
             X[f"sin_week_{n}n"] = np.sin(2*np.pi*n*X["Day"]/7)
             X[f"cos_week_{n}n"] = np.cos(2*np.pi*n*X["Day"]/7)
             # Yearly Seasonality
-            X[f"sin_year_{n}n"] = np.sin(2*np.pi*X["Month"]/12)
-            X[f"cos_year_{n}n"] = np.cos(2*np.pi*X["Month"]/12)
+            X[f"sin_year_{n}n"] = np.sin(2*np.pi*n*X["Month"]/12)
+            X[f"cos_year_{n}n"] = np.cos(2*np.pi*n*X["Month"]/12)
             
         return X
