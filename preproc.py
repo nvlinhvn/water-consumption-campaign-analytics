@@ -96,7 +96,7 @@ class Preproc:
     def fourier_seasonality(self,
                             X: pd.DataFrame,
                             weekly: bool = True, 
-                            yearly: bool =True,
+                            yearly: bool = True,
                             order: int = 3) -> pd.DataFrame:
         """
         Decompose seasonality into Fourier series
